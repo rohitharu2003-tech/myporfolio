@@ -1,0 +1,506 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{% block title %}Rohit Chaudhary | Software Developer{% endblock %}</title>
+
+    <meta
+        name="description"
+        content="Modern portfolio of a software developer."
+    >
+
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+
+<body>
+
+    <!-- Animated background -->
+    <canvas id="particles"></canvas>
+
+    <!-- Background glow -->
+    <div class="background-glow glow-1"></div>
+    <div class="background-glow glow-2"></div>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            <span>&lt;</span>Dev<span>/&gt;</span>
+        </div>
+
+        <nav id="navMenu">
+
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#contact" class="nav-link">Contact</a>
+
+        </nav>
+
+        <a href="#contact" class="nav-button">
+            Let's Talk
+        </a>
+
+        <button class="menu-btn" id="menuBtn">
+            ☰
+        </button>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <main>
+
+        <section class="hero section" id="home">
+
+            <div class="hero-content">
+
+                <div class="hero-tag">
+                    <span class="status-dot"></span>
+                    Available for work
+                </div>
+
+                <p class="hello">
+                    Hello, I'm <span>Rohit Chaudhary</span>
+                </p>
+
+                <h1>
+                    Your <span>Creative</span>
+                    <br>
+                    Developer.
+                </h1>
+
+                <p class="hero-description">
+                    I build modern, scalable and interactive digital
+                    experiences using clean code and creative design.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#projects" class="primary-btn">
+                        View My Work
+                        <span>↗</span>
+                    </a>
+
+                    <a href="#contact" class="secondary-btn">
+                        Contact Me
+                    </a>
+
+                </div>
+
+                <div class="social-links">
+
+                    <a href="https://github.com/rohitharu2003-tech" aria-label="GitHub">GH</a>
+                    <a href="https://www.linkedin.com/in/rohit-chaudhary-b7a404296/" aria-label="LinkedIn">in</a>
+                    <a href="#" aria-label="Facebook">FB</a>
+
+                </div>
+
+            </div>
+
+
+            <!-- PROFILE IMAGE -->
+
+            <div class="hero-image-area">
+
+                <div class="image-orbit orbit-one"></div>
+                <div class="image-orbit orbit-two"></div>
+
+                <div class="floating-card python-card">
+                    <span>🐍</span>
+                    Python
+                </div>
+
+                <div class="floating-card django-card">
+                    Django
+                </div>
+
+                <div class="floating-card code-card">
+                    &lt;/&gt;
+                </div>
+
+                <div
+                    class="profile-card"
+                    id="profileCard"
+                >
+
+                    <div class="image-glow"></div>
+
+                    <img
+                        src="{% static 'profile.png' %}"
+                        alt="Developer profile"
+                    >
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= ABOUT ================= -->
+
+        <section class="section about" id="about">
+
+            <div class="section-heading">
+
+                <p class="section-label">
+                    ABOUT ME
+                </p>
+
+                <h2>
+                    Turning ideas into
+                    <span>digital reality.</span>
+                </h2>
+
+            </div>
+
+            <div class="about-grid">
+
+                <div class="about-text">
+
+                    <p>
+                        I'm a passionate software developer who enjoys
+                        building useful, beautiful and scalable
+                        applications and Restful APIs.
+                    </p>
+
+                    <p>
+                        My focus is on writing clean code, solving
+                        real-world problems and continuously learning
+                        modern technologies.
+                    </p>
+
+                    <p>
+                        I enjoy working with Python, Django, APIs
+                        and modern web technologies.
+                    </p>
+
+                    <a href="#contact" class="text-link">
+                        Let's work together →
+                    </a>
+
+                </div>
+
+
+                <div class="skills-grid">
+
+                    <div class="skill-card">
+                        <div class="skill-icon">PY</div>
+                        <h3>Python</h3>
+                        <p>Backend & Automation</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon">DJ</div>
+                        <h3>Django</h3>
+                        <p>Web Development</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon">F-API</div>
+                        <h3>Fast API</h3>
+                        <p>Backend Development</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon">&lt;/&gt;</div>
+                        <h3>REST API</h3>
+                        <p>Backend Development</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= PROJECTS ================= -->
+
+        <section class="section projects" id="projects">
+
+            <div class="section-heading">
+
+                <p class="section-label">
+                    MY WORK
+                </p>
+
+                <h2>
+                    Featured <span>Projects.</span>
+                </h2>
+
+                <p class="section-description">
+                    Some of the projects I've worked on.
+                </p>
+
+            </div>
+
+
+            <div class="projects-grid">
+
+
+                <!-- PROJECT 1 -->
+
+                <article class="project-card">
+
+                    <div class="project-number">
+                        01
+                    </div>
+
+                    <div class="project-icon">
+                        🛒
+                    </div>
+
+                    <div class="project-content">
+
+                        <p class="project-type">
+                            WEB APPLICATION
+                        </p>
+
+                        <h3>
+                            E-Commerce Platform
+                        </h3>
+
+                        <p>
+                            A modern online shopping platform with
+                            authentication, product management,
+                            cart and payment functionality.
+                        </p>
+
+                        <div class="tech-stack">
+
+                            <span>Python</span>
+                            <span>Django</span>
+                            <span>JavaScript</span>
+
+                        </div>
+
+                        <a href="#" class="project-link">
+                            View Project ↗
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PROJECT 2 -->
+
+                <article class="project-card">
+
+                    <div class="project-number">
+                        02
+                    </div>
+
+                    <div class="project-icon">
+                        📊
+                    </div>
+
+                    <div class="project-content">
+
+                        <p class="project-type">
+                            DASHBOARD
+                        </p>
+
+                        <h3>
+                            Analytics Dashboard
+                        </h3>
+
+                        <p>
+                            Interactive dashboard for monitoring
+                            business statistics, users and
+                            performance metrics.
+                        </p>
+
+                        <div class="tech-stack">
+
+                            <span>JavaScript</span>
+                            <span>API</span>
+                            <span>CSS</span>
+
+                        </div>
+
+                        <a href="#" class="project-link">
+                            View Project ↗
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PROJECT 3 -->
+
+                <article class="project-card">
+
+                    <div class="project-number">
+                        03
+                    </div>
+
+                    <div class="project-icon">
+                        🤖
+                    </div>
+
+                    <div class="project-content">
+
+                        <p class="project-type">
+                            AI / AUTOMATION
+                        </p>
+
+                        <h3>
+                            AI Assistant
+                        </h3>
+
+                        <p>
+                            Intelligent assistant application designed
+                            to automate repetitive tasks and improve
+                            productivity.
+                        </p>
+
+                        <div class="tech-stack">
+
+                            <span>Python</span>
+                            <span>AI</span>
+                            <span>API</span>
+
+                        </div>
+
+                        <a href="#" class="project-link">
+                            View Project ↗
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CONTACT ================= -->
+
+        <section class="section contact" id="contact">
+
+            <div class="contact-container">
+
+                <div class="contact-info">
+
+                    <p class="section-label">
+                        CONTACT
+                    </p>
+
+                    <h2>
+                        Let's build something
+                        <span>great.</span>
+                    </h2>
+
+                    <p>
+                        Have an idea, project or opportunity?
+                        Send me a message and let's talk.
+                    </p>
+
+                    <div class="contact-details">
+
+                        <div>
+                            <span>EMAIL</span>
+                            <a href="mailto:rohitharu2003@email.com">
+                                rohitharu2003@email.com
+                            </a>
+                        </div>
+
+                        <div>
+                            <span>LOCATION</span>
+                            <p>Nepal</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <form method="POST" class="contact-form" action="{% url 'contact' %}">
+
+                    {% csrf_token %}        
+                    <div class="form-group">
+
+                        <input
+                            type="text"
+                            name="name"
+                            placeholder="Your Name"
+                            required
+                        >
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <input
+                            type="email"
+                            name="email"
+                            placeholder="Your Email"
+                            required
+                        >
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <textarea
+                            rows="6"
+                            name="message"
+                            placeholder="Tell me about your project..."
+                            required
+                        ></textarea>
+
+                    </div>
+
+                    <button
+                        type="submit"
+                        class="primary-btn submit-btn"
+                    >
+                        Send Message
+                        <span>→</span>
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="logo">
+            <span>&lt;</span>Dev<span>/&gt;</span>
+        </div>
+
+        <p>
+            © 2026 Rohit Chaudhary. Built with code & creativity.
+        </p>
+
+        <a href="{% url 'home' %}" class="back-to-top">
+            Back to top ↑
+        </a>
+
+    </footer>
+    {% block content %}
+    {% endblock %}
+
+
+    <script src="{% static 'script.js' %}"></script>
+
+</body>
+</html>
